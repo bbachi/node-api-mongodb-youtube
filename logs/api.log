@@ -1,0 +1,3 @@
+{"level":30,"time":1689999400454,"pid":37379,"hostname":"Bhargavs-MacBook-Air.local","msg":"API : Express Server listening on port 4000"}
+{"level":30,"time":1689999400468,"pid":37379,"hostname":"Bhargavs-MacBook-Air.local","msg":"API : Connected to database"}
+{"level":30,"time":1689999418083,"pid":37379,"hostname":"Bhargavs-MacBook-Air.local","msg":"API : req.body Details {\"task\":\"asdsadsad\",\"assignee\":\"user2\",\"status\":\"TODO\",\"description\":\"ASDASD ASDSADASD\",\"createdBy\":\"user1\",\"updatedBy\":\"user3\"}"}
