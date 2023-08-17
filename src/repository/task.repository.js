@@ -1,11 +1,8 @@
 const { Task } = require('../model/task.model');
-const { connect } = require('../config/db.config');
 
 class TaskRepository { 
 
-    constructor() {
-        connect();
-    }
+    constructor() {}
 
     getTasks() {
         return Task.find({})

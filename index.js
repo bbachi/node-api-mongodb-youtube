@@ -5,6 +5,7 @@ const envFilePath =  process.env.NODE_ENV
         ? `./environments/.env.${process.env.NODE_ENV}` 
         : `./environments/.env`
 require('dotenv').config({path: envFilePath})
+const { connect } = require('./src/config/db.config');
 
 const todos = require('./src/routes/todos')
 const taskDetail = require('./src/routes/task_detail')
@@ -31,4 +32,7 @@ app.get("*", (req, res) => {
 })
 
 
-app.listen(port, () => logger.info(`Express Server listening on port ${port} in Environment ${process.env.ENVIRONMENT}`))
+app.listen(port, () => {
+    connect();
+    logger.info(`Express Server listening on port ${port} in Environment ${process.env.ENVIRONMENT}`)
+})
